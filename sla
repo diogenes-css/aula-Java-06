@@ -1,0 +1,104 @@
+package dio2;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Circulo.raio(args);
+Retangulo.diametrio(args);
+Aluno.main(args);
+
+	}
+
+}
+package dio2;
+import java.util.Scanner;
+public class Circulo {
+
+	public static void raio(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner a = new Scanner (System.in);
+		System.out.println("Digite o raio do circulo");
+		double s = a.nextDouble();
+		double d=3.14;
+		double o= d*(s*s);
+		double t = 2*d*s;
+		System.out.println("O diametro do circulo e de"+t);
+		System.out.println("E a sua area e de"+o);
+
+
+
+
+
+
+
+	}
+
+}
+package dio2;
+import java.util.Scanner;
+public class Retangulo {
+
+	public static void diametrio(String[] args) {
+		
+
+		
+				Scanner a = new Scanner (System.in);
+				System.out.println("Digite a largura do retangulo");
+				double s = a.nextDouble();
+				System.out.println("Digite a altura do retangulo");
+				double r = a.nextDouble();
+				double t = 2*(s+r);
+				double o = s*r;
+				System.out.println("O perimetro do retangulo e de"+t);
+				System.out.println("A area do retangulo e de"+o);
+
+			}
+
+		
+
+	}
+
+
+
+
+
+
+
+
+
+
+package dio2;
+import java.util.Scanner;
+public class Aluno {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner a = new Scanner(System.in);
+System.out.println("entre com o seu nome");
+String s = a.nextLine();
+System.out.println("digite a materia");
+String e= a.nextLine();
+System.out.println("Entre com a nota 1");
+System.out.println("----------------------------------------------------------");
+double w = a.nextDouble();
+System.out.println("Entre com a nota 2");
+System.out.println("-----------------------------------------------------------");
+double p = a.nextDouble();
+System.out.println("Entre com a nota 3");
+System.out.println("------------------------------------------------------------");
+double o = a.nextDouble();
+System.out.println("Entre com a nota 4");
+System.out.println("------------------------------------------------------------");
+double c=a.nextDouble();
+
+double j= (w+p+o+c)/4;
+
+if (j>7) {
+	System.out.println("O aluno"+" "+s+" "+"Na materia de"+" "+e+" "+"esta aprovado com uma media de"+" "+j );
+} else {
+	System.out.println("O aluno"+" "+s+" "+"Na materia de"+" "+e+" "+"esta reprovado com uma media de"+" "+j );
+}	}}
+
+
+
